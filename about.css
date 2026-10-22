@@ -1,0 +1,101 @@
+.about{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    background-color:white;
+    margin-top: 30px;
+    padding: 50px;
+}
+.blow img{
+    width: 300px;
+    border-radius: 100%;
+}
+.us{
+    font-family: "poppins", sans-serif;
+    text-align:center;
+    text-decoration:underline;
+    text-decoration-color: #c68642;
+    padding-bottom: 30px;
+}
+.destination{
+    font-family: "poppins", sans-serif;
+    padding-bottom: 30px;
+    font-size: 16px;
+}
+.social-icons{
+    display:flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    text-decoration: none;
+    color:black;
+}
+.social-icons a{
+    text-decoration:none;
+    color:black;
+}
+/* =========================
+   Tablet (768px - 1024px)
+========================= */
+@media screen and (max-width: 1024px) {
+    .about {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+        padding: 40px 30px;
+    }
+
+    .blow img {
+        width: 250px;
+    }
+
+    .destination {
+        font-size: 15px;
+        line-height: 1.8;
+    }
+
+    .social-icons {
+        justify-content: center;
+        gap: 25px;
+    }
+}
+
+
+/* =========================
+   Phone (up to 767px)
+========================= */
+@media screen and (max-width: 767px) {
+    .about {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 30px 20px;
+        gap: 25px;
+    }
+
+    .blow img {
+        width: 200px;
+    }
+
+    .us {
+        font-size: 26px;
+    }
+
+    .destination {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .social-icons {
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .social-icons a {
+        font-size: 20px;
+    }
+}

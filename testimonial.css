@@ -1,0 +1,130 @@
+.testimonial{
+    background-color: white;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    overflow: hidden;
+    padding-bottom: 50px;
+}
+.test{
+    color: black;
+    font-family: "poppins" sans-serif;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: #c68642;
+}
+.monials{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding-top: 50px;
+    transition: transform 0.8s ease-in-out;
+}
+
+.nail{
+    min-width: calc((100% - 90px) / 4);
+    flex-shrink:0;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+}
+
+.nail img{
+    width:235px;
+    height:235px;
+    border:1px solid lightgray;
+    border-radius:50%;
+    margin-bottom:30px;
+    animation: float 3s ease-in-out infinite;
+}
+.carter{
+    font-family: " poppins" sans-serif;
+    font-size: 14px;
+    text-align: center;
+}
+.coming{
+    font-family: " poppins" sans-serif;
+    font-size: 10px;
+    font-weight: lighter;
+    text-align: center;
+}
+
+/* ===========================
+   TABLET (992px and below)
+=========================== */
+@media screen and (max-width: 992px){
+
+    .testimonial{
+        padding: 40px 20px;
+    }
+
+    .test{
+        font-size: 32px;
+    }
+
+    .monials{
+        gap: 20px;
+    }
+
+    .nail{
+        min-width: calc((100% - 20px) / 2);
+    }
+
+    .nail img{
+        width: 180px;
+        height: 180px;
+    }
+
+    .carter{
+        font-size: 18px;
+    }
+
+    .coming{
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+}
+
+
+/* ===========================
+   PHONE (768px and below)
+=========================== */
+@media screen and (max-width: 768px){
+
+    .testimonial{
+        padding: 30px 15px;
+    }
+
+    .test{
+        font-size: 28px;
+    }
+
+    .monials{
+        gap: 20px;
+    }
+
+    .nail{
+        min-width: 100%;
+    }
+
+    .nail img{
+        width: 150px;
+        height: 150px;
+    }
+
+    .carter{
+        font-size: 18px;
+    }
+
+    .coming{
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .coming br{
+        display: none;
+    }
+
+}

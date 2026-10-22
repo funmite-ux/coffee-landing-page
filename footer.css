@@ -1,0 +1,84 @@
+.footer{
+    background-color: black;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.shop{
+    font-family: "poppins" sans-serif;
+    font-size: 16px;
+    color: #c68642;
+    padding-top: 10px;
+}
+.icons{
+    display: flex;
+     gap: 10px;
+     padding-top: 10px;
+}
+.icons a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+/* ==========================
+   Tablet (768px - 991px)
+========================== */
+@media screen and (max-width: 991px){
+
+    .footer{
+        padding: 20px 40px;
+        align-items: center;
+    }
+
+    .shop{
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .icons{
+        display: flex;
+        gap: 15px;
+        padding-top: 10px;
+    }
+
+    .icons a{
+        font-size: 20px;
+    }
+
+}
+
+
+/* ==========================
+   Phone (767px and below)
+========================== */
+@media screen and (max-width: 767px){
+
+    .footer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 20px 15px;
+        gap: 15px;
+    }
+
+    .shop{
+        font-size: 14px;
+        padding-top: 0;
+    }
+
+    .icons{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding-top: 0;
+    }
+
+    .icons a{
+        font-size: 22px;
+    }
+
+}
